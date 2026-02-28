@@ -3,7 +3,7 @@
 
 ## 📘 Project Overview
 
-This is an **intelligent deep learning application** that detects and classifies **traffic signs from images**.
+This is an **intelligent deep learning application** that recognise and classifies **traffic signs from images**.
 It provides accurate predictions using a **Convolutional Neural Network (CNN)** model along with a **confidence score display through a graphical user interface (GUI)**.
 
 The system helps improve **road safety and intelligent transportation systems** by automating traffic sign recognition.
