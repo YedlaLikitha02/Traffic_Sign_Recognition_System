@@ -14,7 +14,6 @@ A training script to train the CNN model
 
 A GUI application to test the trained model
 
-📂 Project Structure
 Traffic_Sign_Recognition_System/
 │
 ├── traffic_sign.py        # CNN model training
