@@ -133,6 +133,6 @@ By combining **CNN models with a user-friendly GUI**, the system provides accura
 ## 👩‍💻 Author
 
 **Yedla Likitha**
-*Department of Information Technology
-*MVSR Engineering College
+* Department of Information Technology
+* MVSR Engineering College
 .
