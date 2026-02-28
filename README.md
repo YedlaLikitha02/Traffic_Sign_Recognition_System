@@ -1,106 +1,140 @@
-🚦 Traffic Sign Recognition System Using CNN
-📘 Project Overview
 
-This project is a deep learning–based Traffic Sign Recognition System that automatically detects and classifies traffic signs from images.
+# 🚦 Traffic Sign Recognition System Using CNN
 
-It uses a Convolutional Neural Network (CNN) model for accurate classification and provides a user-friendly GUI built with Tkinter to upload and test images.
+## 📘 Project Overview
 
-The system predicts the traffic sign class and displays the confidence score.
+This is an **intelligent deep learning application** that detects and classifies **traffic signs from images**.
+It provides accurate predictions using a **Convolutional Neural Network (CNN)** model along with a **confidence score display through a graphical user interface (GUI)**.
 
-🚀 Features at a Glance
+The system helps improve **road safety and intelligent transportation systems** by automating traffic sign recognition.
 
-🧠 CNN-Based Classification – 44 traffic sign classes using deep learning
-🖼 Image Preprocessing – Resizing and normalization using OpenCV
-🖥 Tkinter GUI – Upload and classify images easily
-📊 Confidence Score – Displays prediction accuracy percentage
-💾 Model Saving – Trained model saved as .h5 file
+---
 
-🧩 System Modules
-1️⃣ Model Training Module (traffic_sign.py)
+## 🚀 Features at a Glance
 
-Loads traffic sign dataset (GTSRB)
+* 🧠 **CNN-Based Classification** – Classifies traffic signs into 44 categories.
+* 🖼️ **Image Preprocessing (OpenCV)** – Resizes and normalizes images for better accuracy.
+* 🖥️ **Graphical User Interface (Tkinter)** – Upload and classify traffic sign images easily.
+* 📊 **Confidence Score Display** – Shows prediction probability percentage.
+* 💾 **Model Saving (.h5 File)** – Stores trained model for future predictions.
 
-Resizes images to 30×30 pixels
+---
 
-Normalizes pixel values (0–255 → 0–1)
+## 🧩 System Modules
 
-Trains a CNN model using TensorFlow/Keras
+### 1️⃣ Model Training Module (`traffic_sign.py`)
 
-Saves trained model as:
+* Loads traffic sign images from the **GTSRB dataset**.
+* Resizes images to **30×30 pixels**.
+* Normalizes pixel values (0–255 → 0–1).
+* Builds and trains a **Convolutional Neural Network (CNN)**.
+* Saves trained model as:
 
+```bash
 traffic_classifier.h5
-2️⃣ GUI Prediction Module (gui.py)
+```
 
-Loads the saved model
+---
 
-Allows users to upload traffic sign images
+### 2️⃣ GUI Prediction Module (`gui.py`)
 
-Preprocesses image before prediction
+* Loads the saved model.
+* Allows users to upload traffic sign images.
+* Preprocesses image before prediction.
+* Predicts traffic sign class.
+* Displays:
 
-Predicts traffic sign class
+  * **Predicted traffic sign name**
+  * **Confidence percentage**
 
-Displays:
+---
 
-Traffic sign name
+## 🧰 Tech Stack
 
-Confidence percentage
+| Layer                | Technologies      |
+| -------------------- | ----------------- |
+| **Programming**      | Python            |
+| **Deep Learning**    | TensorFlow, Keras |
+| **Image Processing** | OpenCV, NumPy     |
+| **GUI**              | Tkinter           |
+| **Image Handling**   | PIL               |
 
-🧰 Tech Stack
-Layer	Technologies Used
-Programming	Python
-Deep Learning	TensorFlow, Keras
-Image Processing	OpenCV, NumPy
-GUI	Tkinter
-Image Handling	PIL
-⚙️ Installation & Setup
-🔧 Prerequisites
+---
 
-Python 3.x
+## ⚙️ Installation & Setup
 
-pip
+### 🔧 Prerequisites
 
-🪜 Steps to Run
-1️⃣ Clone the Repository
+* Python 3.x
+* pip
+
+---
+
+### 🪜 Steps to Run
+
+#### **1️⃣ Clone the Repository**
+
+```bash
 git clone https://github.com/YedlaLikitha02/Traffic_Sign_Recognition_System.git
 cd Traffic_Sign_Recognition_System
-2️⃣ Install Dependencies
+```
+
+---
+
+#### **2️⃣ Install Dependencies**
+
+```bash
 pip install -r requirements.txt
-3️⃣ Train the Model
+```
+
+---
+
+#### **3️⃣ Train the Model**
+
+```bash
 python traffic_sign.py
+```
 
-This generates:
+This will generate:
 
+```bash
 traffic_classifier.h5
-4️⃣ Run the GUI
+```
+
+---
+
+#### **4️⃣ Run the GUI**
+
+```bash
 python gui.py
+```
 
-Upload a traffic sign image and click Classify Image to view prediction.
+Upload a traffic sign image and click **Classify Image** to view prediction.
 
-🧾 Outputs / Results
-Module	Description
-CNN Model	Accurately classifies 44 traffic sign categories
-GUI	Displays predicted sign and confidence score
-Preprocessing	Improves accuracy using normalization and resizing
-🎯 Applications
+---
 
-🚗 Autonomous Vehicles
+## 🧾 Outputs / Results
 
-🚦 Advanced Driver Assistance Systems (ADAS)
+| Module            | Description                                  |
+| ----------------- | -------------------------------------------- |
+| **CNN Model**     | Classifies 44 traffic sign categories        |
+| **GUI**           | Displays predicted sign and confidence score |
+| **Preprocessing** | Improves accuracy using normalization        |
 
-🛣 Road Safety Monitoring
+---
 
-🏙 Smart Traffic Systems
+## 🏁 Conclusion
 
-📚 Driver Education Systems
+This project demonstrates how **deep learning and computer vision** can be used to automatically recognize traffic signs.
+By combining **CNN models with a user-friendly GUI**, the system provides accurate classification and enhances road safety applications.
 
-🏁 Conclusion
+---
 
-The CNN-based traffic sign recognition system successfully classifies traffic signs with high accuracy.
+## 👩‍💻 Author
 
-By combining deep learning and a simple GUI interface, the project demonstrates how AI can enhance road safety and intelligent transportation systems.
-
-👩‍💻 Author
-
-Yedla Likitha
+**Yedla Likitha**
 Department of Information Technology
 MVSR Engineering College
+
+
+If you want it **even closer word-by-word structure like your Formation README (including References + Contributors sections)**, tell me — I’ll match it 100% structurally.
