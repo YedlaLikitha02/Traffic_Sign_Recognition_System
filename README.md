@@ -135,6 +135,4 @@ By combining **CNN models with a user-friendly GUI**, the system provides accura
 **Yedla Likitha**
 Department of Information Technology
 MVSR Engineering College
-
-
-If you want it **even closer word-by-word structure like your Formation README (including References + Contributors sections)**, tell me — I’ll match it 100% structurally.
+.
