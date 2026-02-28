@@ -1,14 +1,24 @@
 🚦 Traffic Sign Recognition System
-📌 Overview
 
-This project is a Traffic Sign Recognition System built using Convolutional Neural Networks (CNN).
-It classifies traffic signs from images and displays the predicted sign along with a confidence score using a Tkinter GUI.
+A deep learning–based Traffic Sign Recognition System built using Convolutional Neural Networks (CNN).
+This project classifies traffic signs from images and displays the predicted sign along with a confidence score using a simple Tkinter GUI.
+
+📌 Project Overview
+
+Traffic sign recognition is an important component of intelligent transportation systems and autonomous vehicles.
+This project uses a CNN model to automatically recognize and classify traffic signs into 44 different categories.
+
+The system consists of:
+
+A training script to train the CNN model
+
+A GUI application to test the trained model
 
 📂 Project Structure
 Traffic_Sign_Recognition_System/
 │
-├── traffic_sign.py        # Train the CNN model
-├── gui.py                 # GUI to test the trained model
+├── traffic_sign.py        # CNN model training
+├── gui.py                 # GUI for testing the model
 ├── traffic_classifier.h5  # Saved trained model
 ├── requirements.txt
 └── README.md
@@ -24,74 +34,78 @@ NumPy
 
 Tkinter
 
-PIL
+PIL (Python Imaging Library)
 
-⚙️ How It Works
+⚙️ How the System Works
 1️⃣ Model Training (traffic_sign.py)
 
-Loads traffic sign dataset (GTSRB)
+Loads traffic sign images (GTSRB dataset)
 
 Resizes images to 30×30 pixels
 
-Normalizes pixel values
+Normalizes pixel values (0–255 → 0–1)
 
-Trains a CNN model
+Trains a Convolutional Neural Network
 
-Saves the trained model as:
+Saves the trained model as traffic_classifier.h5
 
-traffic_classifier.h5
-2️⃣ GUI Testing (gui.py)
+2️⃣ GUI Application (gui.py)
 
-Loads the saved model (traffic_classifier.h5)
+Loads the trained model
 
-Allows user to upload an image
+Allows users to upload an image
 
-Preprocesses image
+Preprocesses the image
 
-Predicts traffic sign
+Predicts the traffic sign
 
 Displays:
 
-Traffic sign name
+Predicted traffic sign name
 
-Confidence score
+Confidence percentage
 
 ▶️ How to Run the Project
-Step 1: Install Requirements
+Step 1: Install Dependencies
 pip install -r requirements.txt
 Step 2: Train the Model
 python traffic_sign.py
 
-This will generate:
+This will generate the trained model file:
 
 traffic_classifier.h5
-Step 3: Run GUI
+Step 3: Run the GUI
 python gui.py
 
-Upload an image and click Classify Image.
+Upload a traffic sign image and click Classify Image to see the prediction.
 
 ✅ Features
 
-44-class traffic sign classification
-
-Confidence score display
-
-User-friendly GUI
-
-Deep learning based model
+✔ 44-class traffic sign classification
+✔ Confidence score display
+✔ User-friendly graphical interface
+✔ Deep learning–based prediction
+✔ Image preprocessing using OpenCV
 
 📊 Applications
 
 Autonomous vehicles
 
-Driver assistance systems
+Advanced Driver Assistance Systems (ADAS)
 
 Smart traffic management
 
-Road safety systems
+Road safety monitoring
+
+Driver education tools
+
+🎯 Conclusion
+
+The system successfully classifies traffic signs using a CNN-based approach.
+It demonstrates how deep learning can improve traffic sign recognition accuracy and reduce human error in real-world driving scenarios.
 
 👩‍💻 Author
 
 Yedla Likitha
-Information Technology
+Department of Information Technology
 MVSR Engineering College
